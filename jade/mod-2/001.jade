@@ -1,0 +1,76 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 2', 'Prosperidad', '', '', '#test-mod-2')
+						
+						+navegacion('#', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=499695&chapterid=10870', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					h1 Sexta Sesión: ODS 6 - Agua limpia y saneamiento y ODS 7 - Energía asequible y no contaminante
+					
+					p El sexto ODS es Agua limpia y saneamiento y busca garantizar la disponibilidad de agua y su gestión sostenible y el saneamiento para todos. En la actualidad, aproximadamente el 40% de la población mundial experimenta la escasez de agua. Si bien desde los 90 ha incrementado el acceso a agua potable y al saneamiento, la creciente escasez de agua a nivel mundial es un nuevo problema con una solución compleja que solo empeorará conforme aumente la problemática ambiental y los niveles del mar. Cada vez son más los países que experimentan sequías y desertificación. Para poder garantizar que la población mundial tenga acceso a agua potable y saneamiento para el año 2050, se deben realizar importantes inversiones en infraestructura, instalaciones sanitarias y educación ambiental. Crisis como la del COVID-19 nos demuestran la importancia del acceso al agua y al saneamiento para garantizar la salud de la población.
+					
+					h2 Video ODS 6 | Agua limpia y saneamiento
+					
+					+modulo-video('https://www.youtube.com/embed/6kke9YIohQQ')
+					
+					p El séptimo ODS es Energía asequible y no contaminante y busca garantizar el acceso a una energía asequible, segura, sostenible y moderna para todos. Actualmente, aproximadamente el 13% de la población mundial vive sin energía eléctrica. Sin embargo, la población mundial crece constantemente y con ella la demanda de energía eléctrica. En la actualidad, la mayoría de la energía eléctrica proviene de fuentes no renovables y/o contaminantes que no son sostenibles a largo plazo. Para poder combatir este problema, es necesario realizar inversiones en infraestructura, en eficiencia energética y energías renovables.
+					
+					h2 Video ODS 7 | Energía asequible y no contaminante
+					
+					+modulo-video('https://www.youtube.com/embed/3LLAvYbsT7Q')
+					
+					div.recursos
+						h3 Ver recursos: 
+						ol
+							li
+								a(href='https://www.undp.org/content/undp/es/home/sustainable-development-goals/goal-6-clean-water-and-sanitation.html' target='_blank') https://www.undp.org/content/undp/es/home/sustainable-development-goals/goal-6-clean-water-and-sanitation.html
+							li
+								a(href='https://www.un.org/sustainabledevelopment/es/water-and-sanitation/' target='_blank') https://www.un.org/sustainabledevelopment/es/water-and-sanitation/
+								
+							li
+								a(href='https://www.undp.org/content/undp/es/home/sustainable-development-goals/goal-7-affordable-and-clean-energy.html' target='_blank') https://www.undp.org/content/undp/es/home/sustainable-development-goals/goal-7-affordable-and-clean-energy.html
+								
+							li
+								a(href='https://www.un.org/sustainabledevelopment/es/energy/' target='_blank') https://www.un.org/sustainabledevelopment/es/energy/
+						
+				
+					//- Material modulo
+					//- +material-modulo('material-mod-1')
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

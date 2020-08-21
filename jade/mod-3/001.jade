@@ -1,0 +1,56 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 3', 'Planeta, Paz y Alianzas', '', '', '#test-mod-3')
+						
+						+navegacion('#', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=499704&chapterid=10876', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					h1 Novena Sesión: ODS 12 - Producción y consumo responsable
+					
+					p El décimo segundo ODS es Producción y consumo responsable y busca garantizar modalidades de consumo y producción sostenibles. Si bien la prosperidad es importante, es vital que esta esté acompañada por procesos responsables y sostenible. Se estima que para el año 2050 haya 9600 millones de personas en el mundo, de ser así, serían necesarios tres planetas tierra para poder satisfacer las necesidades de sus habitantes. Actualmente, el sector agropecuario es responsable por el consumo del 70% del agua dulce del planeta y se estima que de estos alimentos producidos, un tercio acaba pudriéndose antes de llegar a su destino o en botes de basura por no ser consumidos a tiempo. Este ODS se trata de hacer más y mejor con menos recursos, optimizándolos y asegurándonos de que se produzca y consuma lo estrictamente necesario con materiales sostenibles que tengan el menor impacto posible en el bienestar del planeta y que los desechos generados sean reintroducidos a la cadena de valor de diversas maneras. 
+					
+					h2 Video ODS 12  | Producción y Consumo Responsables
+					
+					+modulo-video('https://www.youtube.com/embed/Y2n7xFQWOjo')
+						
+				
+					//- Material modulo
+					//- +material-modulo('material-mod-1')
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

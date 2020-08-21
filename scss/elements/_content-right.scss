@@ -1,0 +1,39 @@
+// -----------------------
+// banner home
+// -----------------------
+.curso-cc,
+#page-mod-book-view #region-main .curso-cc,
+#region-main .curso-cc{
+	
+	.content-cc.article{
+		
+		.content-right{
+			position: relative;
+			z-index: 10;
+			overflow: auto;
+			
+			h1{
+				margin: 2rem 0 1.5rem;
+				
+				&:first-child{
+					margin: 0 0 1.5rem;
+				}
+				
+			}
+			
+			
+			h3{
+				margin: 2rem 0 1.5rem;
+			}
+			
+			.recursos{
+				background: $color_grey;
+				padding: 2rem;
+				margin: 4rem 0;
+			}
+			
+		}
+		
+	}
+	
+}

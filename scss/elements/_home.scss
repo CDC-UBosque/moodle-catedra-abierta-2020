@@ -1,0 +1,160 @@
+// -----------------------
+// banner home
+// -----------------------
+
+.curso-cc,
+#region-main .curso-cc{
+	
+	.titles_home{
+		@include font_universal (
+			$font_family_line_height: 42px,
+			$font_family_weight: 300,
+			$font_family_size: 37px,
+			$font_family_color: $color_text,
+			$font_family_letter_spacing: 0,
+			$font_family_group: $font_acherus_light
+		);
+	}
+	
+	.lineamientos{
+		width: 90%;
+		margin: 3rem auto;
+		
+		.title{
+			position: relative;
+			z-index: 2;
+		}		
+		
+		.content{
+			padding: 2rem;
+			background: $color_grey;
+			@include display-grid;
+			@include grid-parent-2-columns (2fr, 1fr);
+			grid-gap: 2rem;
+			place-items: center;			
+			
+			@media (max-width: $breakpoint_3){
+				@include grid-parent-1-columns (1fr);
+			}
+			
+			p{
+				margin: 0;
+			}
+			
+		}
+		
+	}
+	
+	.contenidos-box{
+		width: 90%;
+		margin: 3rem auto;
+		@include display-grid;
+		@include grid-parent-2-columns (1fr, 2fr);
+		
+		@media (max-width: $breakpoint_3){
+			@include grid-parent-1-columns (1fr);
+		}
+		
+		.title{
+			position: relative;
+			z-index: 2;
+			@include grid-child-column (1, 2);
+			@include grid-child-row (1, 2);
+		}		
+		
+		.content{
+			border-left: 1px solid $color_brand_blue;
+			padding-left: 2rem;
+			@include grid-child-column (2, 3);
+			@include grid-child-row (1, 2);
+			
+			@media (max-width: $breakpoint_3){
+				@include grid-child-column (1, 2);
+				@include grid-child-row (2, 3);
+				border-left: 0px;
+				border-top: 1px solid $color_brand_blue;
+				padding-left: 0;
+				padding-top: 2rem;
+				margin-top: 2rem;
+			}
+			
+			p{
+				margin: 0;
+				padding: 0;
+			}
+			
+		}
+		
+	}
+	
+	.modulos{
+		max-width: 90%;
+		margin: 3rem auto;
+		
+		.titulos{
+			
+			display: inline-block;
+			
+			.subtitles_home{
+				display: inline-block;
+				background: $color_brand_green;
+				padding: .5rem;
+				@include font_universal (
+					$font_family_line_height: 27px,
+					$font_family_weight: 300,
+					$font_family_size: 24px,
+					$font_family_color: $color_white,
+					$font_family_letter_spacing: 0,
+					$font_family_group: $font_acherus_regular
+				);
+				
+				span{
+					@include font_universal (
+						$font_family_line_height: 21px,
+						$font_family_weight: 300,
+						$font_family_size: 17px,
+						$font_family_color: $color_white,
+						$font_family_letter_spacing: 0,
+						$font_family_group: $font_acherus_light
+					);
+				}
+				
+			}
+			
+		}
+		
+		.content{
+			margin: 1rem auto;
+			grid-column-gap: 1rem;
+			grid-row-gap: 1rem;
+			@include display-grid;
+			@include grid-parent-5-columns (1fr, 1fr, 1fr, 1fr, 1fr);
+			
+			>div{
+				position: relative;
+			}
+			
+			img.timeit.hidden{
+				display: block;
+				visibility: visible;
+				opacity: .25;
+			}
+			
+			.link_home{
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				
+				&:hover{
+					box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.4);
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}

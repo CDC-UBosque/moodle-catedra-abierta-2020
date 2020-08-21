@@ -1,0 +1,25 @@
+// -----------------------
+// banner home
+// -----------------------
+
+.curso-cc,
+#region-main .curso-cc{
+	
+	.banner-home{
+		
+		.desktop{
+			@media (max-width: $breakpoint_3){
+				display: none;
+			}
+		}
+		
+		.mobile{
+			display: none;
+			@media (max-width: $breakpoint_3){
+				display: block;
+			}
+		}
+			
+	}
+	
+}

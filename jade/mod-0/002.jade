@@ -1,0 +1,64 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 0', 'Introducción', '', '', '', '', '#test-mod-0')
+						
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=499608&chapterid=10862', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=499608&chapterid=10926', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					h1 Historia de los ODS
+					
+					p Los Objetivos de Desarrollo Sostenible (ODS) nacen en la Conferencia de las Naciones Unidas sobre el Desarrollo Sostenible en Río de Janeiro celebrada en 2012. Estos Objetivos tienen la intención de lograr un conjunto de objetivos y una agenda mundialmente acordada que diera frente a los retos ambientales, políticos y económicos del mundo. Los ODS son la reformulación y evolución de los Objetivos de Desarrollo del Milenio, establecidos originalmente en el año 2000 como una forma de combatir la pobreza extrema, el hambre, las enfermedades mortales y ampliar el acceso a la educación.
+					
+					h2 Video La transición hacia los Objetivos de Desarrollo Sostenible
+					
+					+modulo-video('https://www.youtube.com/embed/jL_YyIX5v_s')
+					
+					
+					p En conjunto con el Acuerdo de París y el Marco de Sendai para la Reducción del Riesgo de Desastres, la Agenda 2030 provee un conjunto de normas comunes y metas puntuales y alcanzables para lograr mitigar el cambio climático, sus efectos en las comunidades y los desastres naturales. Estos temas nos conciernen a todos y la única manera de lograr alcanzarlos, es por medio del trabajo conjunto donde todos los sectores de la sociedad realicen acciones en pro de su cumplimiento para lograr un planeta más humano, sostenible y seguro.
+				
+					h2 Video Los Objetivos de Desarrollo Sostenible - qué son y cómo alcanzarlos
+					
+					+modulo-video('https://www.youtube.com/embed/MCKH5xk8X-g')
+						
+				
+					//- Material modulo
+					//- +material-modulo('material-mod-1')
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

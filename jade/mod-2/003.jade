@@ -1,0 +1,76 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 2', 'Prosperidad', '', '', '#test-mod-2')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=499695&chapterid=10870', 'back', '#', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					h1 Octava Sesión: ODS 9 – Industria, Innovación e Infraestructura y ODS 11 – Ciudades y Comunidades Sostenibles
+					
+					p El noveno ODS es Industria, Innovación e Infraestructura y busca construir infraestructuras resilientes, promover la industrialización inclusiva y sostenible y fomentar la innovación. Para poder alcanzar el desarrollo sostenible, es importante que se realice una inversión masiva en infraestructura que promueva la tecnología, las redes eléctricas sostenibles, el transporte masico y las industrias sostenibles. En la actualidad, 4000 millones de personas a nivel mundial no cuentan con acceso a internet, el 90% de esta cifra provienen de países en vía de desarrollo. Además, la industrialización inclusiva y sostenible acompañada por la infraestructura adecuada y la innovación permitirá la dinamización de las fuerzas económicas que generan empleo, incrementan ingresos y ayudan a reducir las desigualdades. 
+					
+					h2 Video ODS 9 | Industria, innovación e infraestructura
+					
+					+modulo-video('https://www.youtube.com/embed/2xparLO41zQ')
+					
+					p El decimo primer ODS es Ciudades y Comunidades Sostenibles y busca lograr que las ciudades y los asentamientos humanos sean inclusivos, seguros, resilientes y sostenibles. Desde hace casi 15 años, aproximadamente el 50% de la población mundial habita en zonas urbanas. Se estima que para el año 2030 este porcentaje ascienda al 60%. Es importante que nos enfoquemos fuertemente en las ciudades ya que en ellas se concentra el 60% del PIB mundial pero también el 70% de las emisiones de carbono y el consumo del 60% de los recursos. Además, la migración constante hacia las ciudades debido a su superior oferta laboral ha causado también un incremento en la población que habita en barrios pobres y marginalizados donde las problemáticas sociales abundan. Es este sector de la población urbana la que más se ve afectada por fenómenos como las crisis económicas, los desastres naturales y las emergencias sanitarias. Para poder garantizar la seguridad y la sostenibilidad de las ciudades, es importante garantizar el acceso a viviendas asequibles y realizar inversiones importantes en transporte público, área verdes y de recreación y mejorar la planeación y gestión urbana para que se inclusiva y participativa.
+					
+					h2 Video ODS 11 | Ciudades y Asentamientos Sostenibles
+					
+					+modulo-video('https://www.youtube.com/embed/Xp4LMbRV8_0')
+					
+					div.recursos
+						h3 Ver recursos: 
+						ol
+							li
+								a(href='https://www.undp.org/content/undp/es/home/sustainable-development-goals/goal-9-industry-innovation-and-infrastructure.html' target='_blank') https://www.undp.org/content/undp/es/home/sustainable-development-goals/goal-9-industry-innovation-and-infrastructure.html
+							li
+								a(href='https://www.un.org/sustainabledevelopment/es/infrastructure/' target='_blank') https://www.un.org/sustainabledevelopment/es/infrastructure/
+								
+							li
+								a(href='https://www.undp.org/content/undp/es/home/sustainable-development-goals/goal-11-sustainable-cities-and-communities.html' target='_blank') https://www.undp.org/content/undp/es/home/sustainable-development-goals/goal-11-sustainable-cities-and-communities.html
+								
+							li
+								a(href='https://www.un.org/sustainabledevelopment/es/cities/' target='_blank') https://www.un.org/sustainabledevelopment/es/cities/
+						
+				
+					//- Material modulo
+					//- +material-modulo('material-mod-1')
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

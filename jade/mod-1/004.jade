@@ -1,0 +1,74 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 1', 'Personas', 'https://ubosquemoodle.unbosque.edu.co/diseno/cursos/catedra-abierta-2020/images/mod-1/sesion-4-foto.jpg', 'Natalia Ruiz Rodgers - Sesión 4 - Educación de Calidad', 'Catedrático: Natalia Ruíz Rodgers: Docente - Universidad El Bosque - Ex Viceministra de Educación', 'Bióloga de la Universidad Nacional de Colombia sede Bogotá, magíster en Ciencias Biológicas y Ph. D. en Ecología de la Universidad Ben-Gurión del Néguev. Fue Viceministra de Educación Superior de la República de Colombia. Fue la primera vicerrectora de Investigación de la Universidad Nacional de Colombia. Ocupó el cargo entre abril de 2005, poco después de su creación, y mayo de 2006.', '#test-mod-1')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=499620&chapterid=10866', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=499620&chapterid=10868', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					h1 Cuarta Sesión: ODS 4 – Educación de Calidad
+					
+					p El cuarto ODS es Educación de Calidad y busca garantizar una educación inclusiva, equitativa y de calidad y promover oportunidades de aprendizaje durante toda la vida para todos. Para el año 2015, la cantidad de niños desescolarizados a nivel mundial disminuyó casi en un 50% y nunca había habido tantos niños y niñas cursando estudios como en la actualidad donde el 91% de los niños del mundo están escolarizados. Esto suena muy bien, pero es importante recordar las diferencias entre países. Si bien a nivel mundial la cifra es del 91% de los niños, en regiones como África Subsahariana tan sólo el 78% de los niños estaban escolarizados en el 2012. Además, la tasa de escolarización difiere fuertemente al comparar áreas rurales y urbanas y los niños provenientes de hogares pobres tienen hasta cuatro veces menos probabilidades de asistir a la escuela que los niños provenientes de familias con mayores ingresos. La necesidad de asegurar que todos los niños y niñas del mundo puedan contar con acceso igualitario a la educación primaria y secundaria de manera gratuita gira entorno a la idea de que la educación de calidad es uno de los impulsores más fuertes y probados para garantizar el desarrollo sostenible y la rotura de los ciclos generacionales de pobreza. Sin embargo, debido a los conflictos armados y a crisis sanitarias como la generada por el COVID-19 la escolarización a nivel mundial está en riesgo. 
+					
+					h3 lecturas
+					
+					p Obligatoria: 
+						b La educación en los Objetivos de Desarrollo del Milenio y en los del Desarrollo Sostenible. Antonio Luzón. Diego Sevilla. 
+						a(href='https://redined.mecd.gob.es/xmlui/bitstream/handle/11162/116402/Educaci%C3%B3n%20social%2061-2.pdf?sequence=1' target='_blank') https://redined.mecd.gob.es/xmlui/bitstream/handle/11162/116402/Educaci%C3%B3n%20social%2061-2.pdf?sequence=1
+						 
+					p Opcional:
+						b ¿Educación de calidad o calidad de la educación? Uno de los Objetivos de Desarrollo Sostenible y el camino para el desarrollo humano. Gina Marcela Reyes Sánchez, Guillermo Andrés Díaz Flórez , Jorge Alberto Dueñas Suaterna , Antonio Bernal Acosta. 2016  
+						a(href='https://ciencia.lasalle.edu.co/cgi/viewcontent.cgi?article=1511&context=ruls' target='_blank') https://ciencia.lasalle.edu.co/cgi/viewcontent.cgi?article=1511&context=ruls
+					
+					h2 Video ODS 4 | Educación de calidad
+					
+					+modulo-video('https://www.youtube.com/embed/Axrfh2cae7E')
+					
+					div.recursos
+						h3 Ver recursos: 
+						ol
+							li
+								a(href='https://www.undp.org/content/undp/es/home/sustainable-development-goals/goal-4-quality-education.html' target='_blank') https://www.undp.org/content/undp/es/home/sustainable-development-goals/goal-4-quality-education.html
+							li
+								a(href='https://www.un.org/sustainabledevelopment/es/education/' target='_blank') https://www.un.org/sustainabledevelopment/es/education/
+						
+				
+					//- Material modulo
+					//- +material-modulo('material-mod-1')
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

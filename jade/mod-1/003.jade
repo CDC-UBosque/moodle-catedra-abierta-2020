@@ -1,0 +1,74 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 1', 'Personas', 'https://ubosquemoodle.unbosque.edu.co/diseno/cursos/catedra-abierta-2020/images/mod-1/sesion-3-foto.jpg', 'María Clara Rangel - Sesión 3 - Salud y BienestarJairo Neira - Sesión 1 - Fin de la Pobreza', 'Catedrático: Dra. María Clara Rangel Galvis: Rectora - Universidad El Bosque', 'Odontóloga ortodoncista de la Universidad Javeriana, doctora en Bioética y magíster en Dirección Universitaria. especialista en Docencia Universitaria, Gerencia en Calidad en Salud y Evaluación y en Planeación Universitaria con la Red Internacional de Evaluadores (RIEV). Fue Vicerrectora Académica de la Universidad El Bosque, miembro corresponsable del proceso de autoevaluación con fines de acreditación institucional y de programas, magistrada del Tribunal Nacional de Ética Odontológica y presidenta de (OFEDO-UDUAI) y de (ACFO).', '#test-mod-1')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=499620&chapterid=10865', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=499620&chapterid=10867', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					h1 Tercera Sesión: ODS 3 - Salud y Bienestar
+					
+					p El tercer ODS es Salud y Bienestar y busca garantizar una vida sana y promover el bienestar para todos en todas las edades. En los últimos años se han logrado grandes avances respecto a la salud y el bienestar de la población mundial. Esto se evidencia en una reducción de las tazas de mortalidad infantil y materna, y de las muertes causadas por tuberculosis, malaria y VIH. Este ODS presenta un gran desafío, puesto que la falta de paridad económica no a nivel interno sino también entre países dificultan la tarea. En la actualidad, 400 millones de personas no tienen acceso a servicios de salud básicos y 1,6 mil millones de personas habitan lugares frágiles donde las crisis de índole social, político, económico o medioambiental afectan gravemente su salud y la capacidad de acceder a servicios básicos. Para lograr las metas de este Objetivo será necesario ampliar la cobertura universal de salud y buscar adelantarnos a posibles nuevas amenazas a la salud mundial. En la actualidad, la crisis generada por el COVID-19 podría significar un gran retraso en el cumplimiento de este objetivo.
+					
+					h3 lecturas
+					
+					p Obligatoria: 
+						b Salud y pobreza, ODS de la Agenda 2030, ¿un reto posible de alcanzar? Autores: Gabriela Mónica Fernández Barberis, María Carmen García Centeno, María del Carmen Escribano Ródenas
+						a(href='https://dialnet.unirioja.es/servlet/articulo?codigo=71357911' target='_blank') https://dialnet.unirioja.es/servlet/articulo?codigo=7135791
+						 
+					p Opcional:
+						b 3er Informe mundial sobre el aprendizaje y la educación de adultos: el impacto del aprendizaje y la educación de adultos sobre la salud y el bienestar, el empleo y el mercado de trabajo, y la vida social, cívica y comunitaria; Capítulo II Salud y Bienestar. Autor. Unesco. Institute for Lifelong Learning. 2017
+						a(href='https://unesdoc.unesco.org/ark:/48223/pf0000247556' target='_blank') https://unesdoc.unesco.org/ark:/48223/pf0000247556
+					
+					h2 Video ODS 3 | Salud y bienestar
+					
+					+modulo-video('https://www.youtube.com/embed/GdySQGTtNL4')
+					
+					div.recursos
+						h3 Ver recursos: 
+						ol
+							li
+								a(href='https://www.undp.org/content/undp/es/home/sustainable-development-goals/goal-3-good-health-and-well-being.html' target='_blank') https://www.undp.org/content/undp/es/home/sustainable-development-goals/goal-3-good-health-and-well-being.html
+							li
+								a(href='https://www.un.org/sustainabledevelopment/es/health/' target='_blank') https://www.un.org/sustainabledevelopment/es/health/
+						
+				
+					//- Material modulo
+					//- +material-modulo('material-mod-1')
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

@@ -1,0 +1,404 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 0', 'Introducción', '', '', '', '', '#test-mod-0')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=499608&chapterid=10863', 'back', '#', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+				
+					<table class="table table-striped">
+						<caption>Cronograma de actividades sincrónicas</caption>
+						<thead>
+							<tr height=20 >
+								<th colspan=8 >Sesión</th>
+								<th rowspan=3 >Video Conferencia</th>
+								<th rowspan=3 >Grabación de las Sesiones</th>
+							</tr>
+							<tr height=20 >
+								<th rowspan=2 >Módulo</th>
+								<th rowspan=2 >Semana</th>
+								<th rowspan=2 >ODS</th>
+								<th rowspan=2 >Tipo de Sesión</th>
+								<th colspan=2 >Dirige</th>
+								<th rowspan=2 >Fecha</th>
+								<th rowspan=2 >Horario</th>
+							</tr>
+							<tr>
+								<th >Dirige</th>
+								<th >Entidad</th>
+							</tr>
+						</thead>
+						<tbody>
+							
+							<tr>
+								<td rowspan=10 >1 - Personas</td>
+								<td rowspan=2 >1</td>
+								<td rowspan=2 >1</td>
+								<td>Principal</td>
+								<td>Jairo Neira</td>
+								<td>Departamento Nacional de Planeación</td>
+								<td>18/08/20</td>
+								<td>17:00 - 19:00 horas</td>
+								<td>Unirse</td>
+								<td>Ver Grabación</td>
+							</tr>
+							<tr>
+								<td >Complementaria</td>
+								<td >Dept de Humanidades</td>
+								<td >Universidad El Bosque</td>
+								<td >20/08/20</td>
+								<td >17:00 - 19:00 horas</td>
+								<td >Unirse</td>
+								<td >Ver Grabación</td>
+							</tr>
+							<tr>
+								<td rowspan=2 >2</td>
+								<td rowspan=2 >2</td>
+								<td>Principal</td>
+								<td>Padre Daniel Saldarriaga</td>
+								<td>Banco de Alimentos</td>
+								<td>25/08/20</td>
+								<td>17:00 - 19:00 horas</td>
+								<td>Unirse</td>
+								<td>Ver Grabación</td>
+							</tr>
+							<tr>
+								<td >Complementaria</td>
+								<td >Facultad de Ciencias</td>
+								<td >Universidad El Bosque</td>
+								<td >27/08/20</td>
+								<td >17:00 - 19:00 horas</td>
+								<td >Unirse</td>
+								<td >Ver Grabación</td>
+							</tr>
+							<tr>
+								<td rowspan=2 >3</td>
+								<td rowspan=2 >3</td>
+								<td >Principal</td>
+								<td >María Clara Rangel</td>
+								<td >Rectora Universidad El Bosque</td>
+								<td >1/09/20</td>
+								<td >17:00 - 19:00 horas</td>
+								<td >Unirse</td>
+								<td >Ver Grabación</td>
+							</tr>
+							<tr>
+								<td >Complementaria</td>
+								<td >Facultad de Medicina</td>
+								<td >Universidad El Bosque</td>
+								<td >3/09/20</td>
+								<td >17:00 - 19:00 horas</td>
+								<td >Unirse</td>
+								<td >Ver Grabación</td>
+							</tr>
+							<tr>
+								<td rowspan=2 >4</td>
+								<td rowspan=2 >4</td>
+								<td >Principal</td>
+								<td >Natalia Ruiz Rodgers</td>
+								<td >Universidad Nacional de Colombia</td>
+								<td >8/09/20</td>
+								<td >17:00 - 19:00 horas</td>
+								<td >Unirse</td>
+								<td >Ver Grabación</td>
+							</tr>
+							<tr>
+								<td >Complementaria</td>
+								<td >Facultad de Educación</td>
+								<td >Universidad El Bosque</td>
+								<td >10/09/20</td>
+								<td >17:00 - 19:00 horas</td>
+								<td >Unirse</td>
+								<td >Ver Grabación</td>
+							</tr>
+							<tr>
+								<td rowspan=2 >5</td>
+								<td rowspan=2 >5</td>
+								<td >Principal</td>
+								<td >Pilar Cardona</td>
+								<td >Fundación Avon y Progama &quot;Por ti, por mí, por los dos&quot;</td>
+								<td >15/09/20</td>
+								<td >17:00 - 19:00 horas</td>
+								<td >Unirse</td>
+								<td >Ver Grabación</td>
+							</tr>
+							<tr>
+								<td >Complementaria</td>
+								<td >Centro de Genero</td>
+								<td >Universidad El Bosque</td>
+								<td >17/09/20</td>
+								<td >17:00 - 19:00 horas</td>
+								<td >Unirse</td>
+								<td >Ver Grabación</td>
+							</tr>
+							<tr>
+								<td rowspan=8 >2 - Prosperidad</td>
+								<td rowspan=2 >6</td>
+								<td rowspan=2 >6 y 7</td>
+								<td >Principal</td>
+								<td >Gian Paolo Daguer</td>
+								<td >ENEL</td>
+								<td >22/09/20</td>
+								<td >17:00 - 19:00 horas</td>
+								<td >Unirse</td>
+								<td >Ver Grabación</td>
+							</tr>
+							<tr>
+								<td >Complementaria</td>
+								<td >Facultad de Ingeniería</td>
+								<td >Universidad El Bosque</td>
+								<td >23/09/20</td>
+								<td >17:00 - 19:00 horas</td>
+								<td >Unirse</td>
+								<td >Ver Grabación</td>
+							</tr>
+							<tr>
+								<td rowspan=2 >7</td>
+								<td rowspan=2 >8 y 10</td>
+								<td >Principal</td>
+								<td >Germán Barragán</td>
+								<td >Fundación Corona</td>
+								<td >29/09/20</td>
+								<td >17:00 - 19:00 horas</td>
+								<td >Unirse</td>
+								<td >Ver Grabación</td>
+							</tr>
+							<tr>
+								<td >Complementaria</td>
+								<td >F. Ciencias Económicas y Administrativas</td>
+								<td >Universidad El Bosque</td>
+								<td >1/10/20</td>
+								<td >17:00 - 19:00 horas</td>
+								<td >Unirse</td>
+								<td >Ver Grabación</td>
+							</tr>
+							<tr>
+								<td rowspan=2 >8</td>
+								<td rowspan=2 >9 y 11</td>
+								<td >Principal</td>
+								<td >Rocío Arango</td>
+								<td >Ruta N Medellín</td>
+								<td >6/10/20</td>
+								<td >17:00 - 19:00 horas</td>
+								<td >Unirse</td>
+								<td >Ver Grabación</td>
+							</tr>
+							<tr>
+								<td >Complementaria</td>
+								<td >HUB iEX</td>
+								<td >Universidad El Bosque</td>
+								<td >8/10/20</td>
+								<td >17:00 - 19:00 horas</td>
+								<td >Unirse</td>
+								<td >Ver Grabación</td>
+							</tr>
+							<tr>
+								<td rowspan=2 >9</td>
+								<td rowspan=2 >12</td>
+								<td >Principal</td>
+								<td >Gustavo Yepes</td>
+								<td >Universidad Externado de Colombia y Pacto Mundial PRME</td>
+								<td >13/10/20</td>
+								<td >17:00 - 19:00 horas</td>
+								<td >Unirse</td>
+								<td >Ver Grabación</td>
+							</tr>
+							<tr>
+								<td >Complementaria</td>
+								<td >Facultad de Ingeniería</td>
+								<td >Universidad El Bosque</td>
+								<td >15/10/20</td>
+								<td >17:00 - 19:00 horas</td>
+								<td >Unirse</td>
+								<td >Ver Grabación</td>
+							</tr>
+							<tr>
+								<td rowspan=10 >3 - Planeta, Paz y Alianzas</td>
+								<td rowspan=2 >10</td>
+								<td rowspan=2 >13</td>
+								<td >Principal</td>
+								<td >Carolina García Arbelaez</td>
+								<td >Anheuser-Busch InBev</td>
+								<td >20/10/20</td>
+								<td >17:00 - 19:00 horas</td>
+								<td >Unirse</td>
+								<td >Ver Grabación</td>
+							</tr>
+							<tr>
+								<td >Complementaria</td>
+								<td >Instituto de Salud y Ambiente</td>
+								<td >Universidad El Bosque</td>
+								<td >22/10/20</td>
+								<td >17:00 - 19:00 horas</td>
+								<td >Unirse</td>
+								<td >Ver Grabación</td>
+							</tr>
+							<tr>
+								<td rowspan=2 >11</td>
+								<td rowspan=2 >14</td>
+								<td >Principal</td>
+								<td >Francisco Armando Arias Isaza</td>
+								<td >Invemar</td>
+								<td >27/10/20</td>
+								<td >17:00 - 19:00 horas</td>
+								<td >Unirse</td>
+								<td >Ver Grabación</td>
+							</tr>
+							<tr>
+								<td >Complementaria</td>
+								<td >Facultad de Ciencias</td>
+								<td >Universidad El Bosque</td>
+								<td >29/10/20</td>
+								<td >17:00 - 19:00 horas</td>
+								<td >Unirse</td>
+								<td >Ver Grabación</td>
+							</tr>
+							<tr>
+								<td rowspan=2 >12</td>
+								<td rowspan=2 >15</td>
+								<td >Principal</td>
+								<td >Hernando García</td>
+								<td >Instituo Alexander Von Humboldt</td>
+								<td >3/10/20</td>
+								<td >17:00 - 19:00 horas</td>
+								<td >Unirse</td>
+								<td >Ver Grabación</td>
+							</tr>
+							<tr>
+								<td >Complementaria</td>
+								<td >Departamento de Bioética</td>
+								<td >Universidad El Bosque</td>
+								<td >5/11/20</td>
+								<td >17:00 - 19:00 horas</td>
+								<td >Unirse</td>
+								<td >Ver Grabación</td>
+							</tr>
+							<tr>
+								<td rowspan=2 >13</td>
+								<td rowspan=2 >16</td>
+								<td >Principal</td>
+								<td >Dra. Diana María Ramirez Carvajal</td>
+								<td >Consejo Nacional de Acreditación</td>
+								<td >10/10/20</td>
+								<td >17:00 - 19:00 horas</td>
+								<td >Unirse</td>
+								<td >Ver Grabación</td>
+							</tr>
+							<tr>
+								<td >Complementaria</td>
+								<td >Fac. de Ciencias Jurídicas y Políticas</td>
+								<td >Universidad El Bosque</td>
+								<td >12/11/20</td>
+								<td >17:00 - 19:00 horas</td>
+								<td >Unirse</td>
+								<td >Ver Grabación</td>
+							</tr>
+							<tr>
+								<td rowspan=2 >14</td>
+								<td rowspan=2 >17</td>
+								<td >Principal</td>
+								<td >Eduardo Alfonso Atehortua</td>
+								<td >Principles for Responsible Investment</td>
+								<td >17/11/20</td>
+								<td >17:00 - 19:00 horas</td>
+								<td >Unirse</td>
+								<td >Ver Grabación</td>
+							</tr>
+							<tr>
+								<td >Complementaria</td>
+								<td >Vicerrectoría de Investigaciones</td>
+								<td >Universidad El Bosque</td>
+								<td >19/11/20</td>
+								<td >17:00 - 19:00 horas</td>
+								<td >Unirse</td>
+								<td >Ver Grabación</td>
+							</tr>
+						</tbody>
+					</table>
+				
+				
+				
+					
+					//- ---------------- 
+					//- ---------------- Tables
+					//- ----------------
+					//- +tables-containers('Cronograma de actividades sincrónicas')
+						+set('thead')
+							tr
+								th(colspan='8') Sesión
+								th(rowspan='3') Video conferencia
+								th(rowspan='3') Grabación de las sesiones
+							tr
+								th Módulo
+								th Semana
+								th ODS
+								th Tipo de sesión
+								th(colspan='2') Dirige
+								th Fecha
+								th Horario
+							tr
+								th Dirige
+								th Entidad
+							
+						+set('tr')
+							tr
+								td(rowspan='2') 1 - Personas
+								td(rowspan='2') 1
+								td 1
+								td Principal
+								td Jairo Neira
+								td Departamento Nacional de Planeación
+								td 18/08/20
+								td 17:00 - 19:00 horas
+								td Unirse
+								td Ver grabación
+							tr
+								td Complementaria
+								td Departamento de Humanidades
+								td Universidad El Bosque
+								td 20/08/20
+								td 17:00 - 19:00 horas
+								td Unirse
+								td Ver grabación
+						
+				
+					//- Material modulo
+					//- +material-modulo('material-mod-1')
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

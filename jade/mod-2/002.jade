@@ -1,0 +1,76 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 2', 'Prosperidad', '', '', '#test-mod-2')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=499695&chapterid=10869', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=499695&chapterid=10871', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					h1 Séptima Sesión: ODS 8 - Trabajo decente y crecimiento económico y ODS 10 – Reducción de las desigualdades
+					
+					p El octavo ODS es Trabajo decente y crecimiento económico y busca promover el crecimiento económico sostenido, inclusivo y sostenible, el empleo pleno y productivo y el trabajo decente para todos. Aunque en la actualidad la tasa de desempleo se ha ido reduciendo considerablemente en comparación a décadas anterior, queda un largo camino por recorrer. Para el año 2018, 700 millones de trabajadores en el mundo vivían en la pobreza extrema y moderada con menos de 3,20 USD al día para satisfacer sus necesidades y las de sus familias. Además, el 61% de la fuerza laboral a nivel mundial son trabajadores informales cuyos ingresos fluctúan regularmente y se ven fuertemente afectados por las crisis mundiales y nacionales como recesiones, conflictos armas y crisis sanitarias. Escenarios como el del COVID-19 ponen en riesgo cerca del 50% de los empleos de la fuerza laboral del mundo.
+					
+					h2 Video ODS 8 | Trabajo decente y crecimiento económico
+					
+					+modulo-video('https://www.youtube.com/embed/UnVQRrxwkaQ')
+					
+					p El décimo ODS es Reducción de las desigualdades y busca reducir la desigualdad en y entre los países. La desigualdad en el mundo es evidente, el 10% más rico de la población mundial tiene en su poder el 40% de los ingresos del mundo mientras que el 10% más pobre tiene tan solo entre el 2% y 7% de los ingresos totales. La desigualdad de ingresos incrementa constantemente en el mundo aunque a diferentes ritmos, en Medio Oriente es donde más rápidamente crece la disparidad de ingresos mientras que Europa tiene el ritmo más lento entre las regiones del mundo. Para poder dar frente a este problema, es necesario mejorar la regulación y el control de los mercados, fomentar la cooperación internacional y la asistencia para el desarrollo, y empoderar a las poblaciones vulnerables mientras se les garantiza el acceso a los recursos necesarios para romper con los ciclos de pobreza. Las crisis económicas, los conflictos armados y las emergencias sanitarias como la del COVID-19 ponen en evidencia los efectos multidimensionales de la desigualdad en la población mundial donde los principales afectados son las personas que cuentan con menos recursos económicos.
+					
+					h2 Video ODS 10 | Reducción de las desigualdades
+					
+					+modulo-video('https://www.youtube.com/embed/ojI69FKxqdE')
+					
+					div.recursos
+						h3 Ver recursos: 
+						ol
+							li
+								a(href='https://www.undp.org/content/undp/es/home/sustainable-development-goals/goal-8-decent-work-and-economic-growth.html' target='_blank') https://www.undp.org/content/undp/es/home/sustainable-development-goals/goal-8-decent-work-and-economic-growth.html
+							li
+								a(href='https://www.un.org/sustainabledevelopment/es/economic-growth/' target='_blank') https://www.un.org/sustainabledevelopment/es/economic-growth/
+								
+							li
+								a(href='https://www.undp.org/content/undp/es/home/sustainable-development-goals/goal-10-reduced-inequalities.html' target='_blank') https://www.undp.org/content/undp/es/home/sustainable-development-goals/goal-10-reduced-inequalities.html
+								
+							li
+								a(href='https://www.un.org/sustainabledevelopment/es/inequality/' target='_blank') https://www.un.org/sustainabledevelopment/es/inequality/
+						
+				
+					//- Material modulo
+					//- +material-modulo('material-mod-1')
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

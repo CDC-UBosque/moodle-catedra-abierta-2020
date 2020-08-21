@@ -1,0 +1,64 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 3', 'Planeta, Paz y Alianzas', '', '', '#test-mod-3')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=499704&chapterid=10876', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=499704&chapterid=10878', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					h1 Décima Primera Sesión: : ODS 14 – Vida submarina
+					
+					p El décimo cuarto ODS es Vida submarina y busca conservar y utilizar en forma sostenible los océanos, los mares y los recursos marinos para el desarrollo sostenible. El 75% de nuestro planeta está cubierto por océanos. Su temperatura, composición química, corrientes y vida son el motor de los sistemas globales que hacen que hacen posible la vida en el planeta. Actualmente, 3000 millones de personas dependen de la diversidad marina y costera para poder sobrevivir y el océano absorbe alrededor del 30% de las emisiones de carbono generadas por el ser humano. Sin embargo, problemas como la sobrexplotación pesquera, el alza en la temperatura oceánica, la contaminación por plásticos y micro plásticos y la acidificación oceánica ponen en riesgo la seguridad económica, alimentaria y energética de una gran parte de la población mundial. Para poder garantizar el bienestar de nuestros océanos y de la población mundial, es importante que protejamos las áreas marinas, que incrementemos la investigación científica y brindemos herramientas a los países en desarrollo para que todos los Estados puedan crear y ejecutar políticas publicas que protejan a los océanos y a la vida submarina.
+					
+					h2 Video ODS 14 | Vida submarina
+					
+					+modulo-video('https://www.youtube.com/embed/GOSyml_q_Mk')
+					
+					div.recursos
+						h3 Ver recursos: 
+						ol
+							li
+								a(href='https://www.undp.org/content/undp/es/home/sustainable-development-goals/goal-14-life-below-water.html' target='_blank') https://www.undp.org/content/undp/es/home/sustainable-development-goals/goal-14-life-below-water.html
+							li
+								a(href='https://www.un.org/sustainabledevelopment/es/oceans/' target='_blank') https://www.un.org/sustainabledevelopment/es/oceans/
+						
+				
+					//- Material modulo
+					//- +material-modulo('material-mod-1')
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

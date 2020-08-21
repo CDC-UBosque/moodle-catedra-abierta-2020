@@ -1,0 +1,175 @@
+// -----------------------
+// banner home
+// -----------------------
+.curso-cc,
+#page-mod-book-view #region-main .curso-cc,
+#region-main .curso-cc{
+	
+	.content-cc.article{
+		
+		.content-left{
+			position: relative;
+			z-index: 20;
+			
+			.blocks{
+				position: -webkit-sticky;
+				position: sticky;
+				top: 0;
+				
+				>div{
+					
+					margin-bottom: 2rem;
+					@include display-grid;
+					//@include grid-parent-2-columns (1fr, 3fr);
+					//@include grid-parent-2-rows (auto, 1fr);
+					
+					&:last-child{
+						margin-bottom: 0;
+						background: $color_light_green;
+					}
+					
+					.title{
+						z-index: 10;
+						color: $color_white;
+						
+						h1{
+							@media (max-width: $breakpoint_2){
+								font-size: 1em;
+								line-height: 1em;
+								font-family: $font_acherus_light;
+								letter-spacing: 1px;
+							}
+						}
+						
+					}
+					
+					.content{
+						padding: 0 1rem 1rem;
+						@include grid-child-column (1, 2);
+						//@include grid-child-row (2, 5);
+						
+						@media (max-width: $breakpoint_2){
+							margin-top: -2px;
+						}
+						
+						a{
+							@media (max-width: $breakpoint_2){
+								font-size: .8em;
+								line-height: .8em;
+							}
+						}
+						
+						h4{
+							@include font_universal (
+								$font_family_line_height: 19px,
+								$font_family_weight: 300,
+								$font_family_size: 14px,
+								$font_family_color: $color_white,
+								$font_family_letter_spacing: 0,
+								$font_family_group: $font_lato_light
+							);
+						}
+						
+						h4.autor{
+							@include font_universal (
+								$font_family_line_height: 19px,
+								$font_family_weight: 300,
+								$font_family_size: 15px,
+								$font_family_color: $color_white,
+								$font_family_letter_spacing: 0,
+								$font_family_group: $font_lato_bold_italic
+							);
+						}
+						
+					}
+					
+					.progressContainer{
+						width: 80%;
+						margin: auto;
+						background: transparentize( $color_brand_blue, 0.8);
+						
+						.progress{
+							background: $color_brand_green;
+							height: 10px;
+						    border-radius: 0;
+						    width: 80%;
+						    box-shadow: none;
+						    margin-bottom: 0;
+						    @include grid-child-column (1, 2);
+							@include grid-child-row (5, 6);
+						}
+						
+					}
+					
+				}
+				
+				h1{
+					font-size: 26px;
+					line-height: 33px;
+					letter-spacing: 2px;
+					background: none;
+					color: $color_white;
+					margin-left: 1rem;
+					padding-bottom: 0;
+				}
+				
+				h2{
+					font-size: 18px !important;
+					line-height: 25px !important;
+					padding: 0;
+					color: $color_white !important;
+					margin-left: 15px !important; 
+					margin-bottom: 0;
+				}
+				
+				hr{
+					border-top: 1px solid $color_white;
+					border-bottom: 1px solid $color_white;
+				}
+				
+				a{
+					display: table;
+				}
+				
+				.top-block{
+					position: relative;
+					z-index: 100;
+					background: $color_light_green;
+					
+					.counter{
+						margin-top: 1rem;
+						p{
+							font-size: 15px;
+							line-height: 20px;
+							margin: 0;
+							padding: 0;
+							color: $color_white;
+						}
+						
+					}
+					
+				}
+				
+				.bottom-block{
+					position: relative;
+					z-index: 100;
+					
+					@media (max-width: $breakpoint_2){
+						position: fixed;
+						bottom: 0;
+						z-index: 1000000000;
+					}
+					
+					.content{
+						place-items: center;
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}

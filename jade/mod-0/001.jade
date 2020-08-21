@@ -1,0 +1,56 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 0', 'Introducción', '', '', '', '', '#test-mod-0')
+						
+						+navegacion('#', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=499608&chapterid=10863', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					h1 Justificación de la Cátedra
+					
+					p Los Objetivos de Desarrollo Sostenible son un compromiso a nivel mundial que busca terminar con lo que empezó el mundo con los Objetivos de Desarrollo del Milenio y abordar nuevos problemas urgentes. Los 17 ODS  fueron adoptados en el año 2015 y tienen fecha de expiración el año 2030. Estos se basan en cinco pilares que conforman la Agenda 2030 de las Naciones Unidas: Personas, Planeta, Prosperidad, Paz y Alianzas. Todos los ODS están interrelacionados, en otras palabras, el éxito o fracaso de un objetivo afecta a los otros 16. En esta Cátedra Abierta podrás empaparte no solo de los ODS en teoría, sino también de qué acciones toma la gente día a día en pro de ellos y cómo tú puedes ser parte de esta alianza. 
+					p Nuestra sesión principal será impartida por expertos nacionales sobre el o los ODS a tratar en la sesión. Estas sesiones principales se llevarán a cabo todos los martes a partir del 18 de agosto hasta el 17 de noviembre. Además, aquellos que quieran podrán ingresar a nuestras sesiones complementarias los jueves a partir del 20 de agosto hasta el 19 de noviembre. Estas sesiones complementarias serán dirigidas por profesores de nuestra Universidad El Bosque. 
+					p Los participantes de la Cátedra que lo deseen, podrán obtener un certificado de participación por un valor de 40,000 COP o 15 USD siempre y cuando asistan a mínimo el 80% de las Sesiones Principales (sesiones de los martes dirigidas por nuestros expertos invitados).
+					
+					p Los estudiantes de la Universidad El Bosque podrán homologar esta Cátedra por dos créditos de Electiva siempre y cuando asistan a mínimo el 80% de todas las sesiones (tanto principales como complementarias) y obtengan una calificación final aprobatoria en los ejercicios propuestos.Si solo desean obtener el certificado, deberán cumplir con el requisito de asistencia y cubrir el valor del mismo (40,000 COP). 
+						
+				
+					//- Material modulo
+					//- +material-modulo('material-mod-1')
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

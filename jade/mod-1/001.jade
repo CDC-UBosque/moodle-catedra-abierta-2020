@@ -1,0 +1,74 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 1', 'Personas', 'https://ubosquemoodle.unbosque.edu.co/diseno/cursos/catedra-abierta-2020/images/mod-1/sesion-1-foto.jpg', 'Jairo Neira - Sesión 1 - Fin de la Pobreza', 'Catedrático: Jairo Alexander Neira: Asesor Técnico ODS - Departamento Nacional de Planeación', 'Profesional en Gobierno y Relaciones Internacionales y Especialista en Econometría. Trabajó en el sector social con la Fundación Saldarriaga Concha en diseño, implementación y medición de programas de generación de ingresos para población vulnerable. Fue Asesor de la Dirección General del Presupuesto Público Nacional en el Ministerio de Hacienda y Crédito Público.', 'test-mod-1')
+						
+						+navegacion('#', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=499620&chapterid=10865', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					h1 Primera Sesión: ODS 1 - Fin de la Pobreza
+					
+					p El primer ODS es Fin de la pobreza y busca poner fin a la pobreza en todas sus formas en todo el mundo. Si bien la pobreza extrema se ha reducido considerablemente en las últimas décadas, nos queda un largo camino por recorrer. Además, crisis como la causada por el COVID-19 ponen en riesgo los avances logrados. Actualmente, el 10% de la población mundial (aproximadamente 700 millones de personas), viven en la pobreza extrema. Entre esta población se encuentran un quinto de los niños del mundo y el 8% de la población trabajadora. Estas personas encuentran grandes dificultades para poder satisfacer necesidades fundamentales como el acceso a la salud, la educación, alimentos nutritivos y agua potable. Si bien la mayoría de las personas que viven en estas condiciones se encuentran en África Subsahariana, es una tendencia a nivel mundial que los índices de pobreza en las áreas rurales son del 17,2%, esto es más del triple de las áreas urbanas que las rodean, afectando así a la población de países con amplias áreas rurales. 
+					
+					h3 lecturas
+					
+					p Obligatoria: 
+						b Medición multidimensional de la pobreza: estado de la cuestión y aplicación al ODS-1 - JML Ramos - Revista Internacional de Cooperación y Desarrollo, 2016  
+						a(href='http://www.revistas.usb.edu.co/index.php/Cooperacion/article/view/2540/0' target='_blank') http://www.revistas.usb.edu.co/index.php/Cooperacion/article/view/2540/0
+						 
+					p Opcional:
+						b La Última Milla: Los desafíos éticos de la pobreza extrema y la vulnerabilidad en la Agenda 2030 para el Desarrollo Sostenible de Naciones Unidas - M Pedrajas - Veritas, 2017  
+						a(href='https://scielo.conicyt.cl/scielo.php?pid=S0718-92732017000200079&script=sci_arttext&tlng=e' target='_blank') https://scielo.conicyt.cl/scielo.php?pid=S0718-92732017000200079&script=sci_arttext&tlng=e
+					
+					h2 Video ODS 1 | Fin de la pobreza
+					
+					+modulo-video('https://www.youtube.com/embed/PQveU35dxIE')
+					
+					div.recursos
+						h3 Ver recursos: 
+						ol
+							li
+								a(href='https://www.un.org/sustainabledevelopment/es/poverty/' target='_blank') https://www.un.org/sustainabledevelopment/es/poverty/
+							li
+								a(href='https://www.undp.org/content/undp/es/home/sustainable-development-goals/goal-1-no-poverty.html' target='_blank') https://www.undp.org/content/undp/es/home/sustainable-development-goals/goal-1-no-poverty.html
+						
+				
+					//- Material modulo
+					//- +material-modulo('material-mod-1')
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

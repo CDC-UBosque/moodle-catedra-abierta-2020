@@ -1,0 +1,64 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 3', 'Planeta, Paz y Alianzas', '', '', '#test-mod-3')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=499704&chapterid=10877', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=499704&chapterid=10879', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					h1 Décima Segunda Sesión: ODS 15 – Vida de ecosistemas terrestres
+					
+					p El décimo quinto ODS es Vida de ecosistemas terrestres y busca gestionar sosteniblemente los bosques, luchar contra la desertificación, detener e invertir la degradación de las tierras y detener la pérdida de biodiversidad. El sustento humano depende en gran parte de la tierra. Si bien los sistemas globales depende de los océanos, casi el 80% de la alimentación humana depende de la agricultura terrestre. Además, el 30% de la superficie terrestre está cubierta por bosques, los cuales son cruciales en la absorción de dióxido de carbono, ergo, en la lucha contra el cambio climático. Si bien entre el 60% y el 80% del agua dulce del planeta depende de los bosques, cada año perdemos 13 millones de hectáreas de bosques causando desertificación masiva y sequías que ponen en especial riesgo a las poblaciones vulnerables, a las especies de fauna nativa y perdemos un aliado crucial en la lucha contra los gases de efecto invernadero. El desplazamiento de las especies de fauna nativa no solo las ponen en peligro de extinción, sino también ha incrementado la aparición de enfermedades zoonóticas, es decir, enfermedades que se transmiten entre animales y humanos que pueden tener consecuencias incalculables como ha sucedido con la crisis sanitaria por el COVID-19. Para lograr este objetivo, es importante utilizar de manera sostenible los recursos terrestres, incrementar el acceso a recursos a los pequeños agricultores para reducir la agricultura de extensión y generar legislaciones efectivas que eviten la deforestación masiva, la caza furtiva y el tráfico de especies exóticas. 
+					
+					h2 Video ODS 15 | Vida de ecosistemas terrestres
+					
+					+modulo-video('https://www.youtube.com/embed/1peW1UMNq1A')
+					
+					div.recursos
+						h3 Ver recursos: 
+						ol
+							li
+								a(href='https://www.undp.org/content/undp/es/home/sustainable-development-goals/goal-15-life-on-land.html' target='_blank') https://www.undp.org/content/undp/es/home/sustainable-development-goals/goal-15-life-on-land.html
+							li
+								a(href='https://www.un.org/sustainabledevelopment/es/biodiversity/' target='_blank') https://www.un.org/sustainabledevelopment/es/biodiversity/
+						
+				
+					//- Material modulo
+					//- +material-modulo('material-mod-1')
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			
